@@ -1,0 +1,11 @@
+node_modules/
+upload_images/*.jpg
+upload_images/*.jpeg
+upload_images/*.png
+upload_images/*.gif
+upload_images/*.webp
+!upload_images/.gitkeep
+.env
+*.log
+.DS_Store
+Thumbs.db

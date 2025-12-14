@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Fit - Your Fitness Journey Starts Here</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top floating-navbar">
+        <div class="container-fluid">
+            <div class="navbar-container">
+                <a class="navbar-brand" href="#">Click Fit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="text-overlay"></div>
+        <div class="orange-spotlight"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            PUSH YOUR LIMITS!
+                        </h1>
+                        <p class="hero-description">
+                            Unleash your potential with Click Fit's elite training programs.<br>
+                            Professional coaches, state-of-the-art equipment, and proven results.<br>
+                            Your transformation starts with a single step.
+                        </p>
+                        <button class="btn btn-hero" data-hover="More Info"><span>More Info</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Stats -->
+    <section class="py-5" style="background-color: #ffdc9f;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="stats-label">METRICS</p>
+                <h2 class="stats-heading">WHAT DOES THE NUMBERS SAY</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="line-diagonal-1"></div>
+                <div class="line-diagonal-2"></div>
+                <div class="stats-decorative-lines">
+                    <div class="stats-line stats-line-1"></div>
+                    <div class="stats-line stats-line-2"></div>
+                </div>
+                <div class="stat-item stat-left">
+                    <h3 class="counter" data-target="25">0</h3>
+                    <p>Programs</p>
+                </div>
+                <div class="stat-item stat-right">
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Coaches</p>
+                </div>
+                <div class="stat-item stat-center">
+                    <h3 class="counter" data-target="1000">0</h3>
+                    <p>Members</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fact -->
+    <section class="py-5 fact-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-3 text-center">
+                    <div class="fact-icon-wrapper">
+                        <div class="fact-icon-bg"></div>
+                        <i class="fas fa-lightbulb fact-icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="fact-content">
+                        <h3 class="fact-label">FACTS</h3>
+                        <h2 class="fact-heading">DID YOU KNOW?</h2>
+                        <div class="fact-text-wrapper">
+                            <p id="fun-fact" class="fact-text">Getting ready to amaze you with an incredible fact...</p>
+                        </div>
+                        <div class="fact-decorative-lines">
+                            <div class="fact-line fact-line-1"></div>
+                            <div class="fact-line fact-line-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload -->
+    <section id="upload" class="upload-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="upload-header text-center mb-5">
+                        <h2 class="upload-title">Share Your Fitness Journey</h2>
+                        <p class="upload-subtitle">Upload your transformation photos and inspire others!</p>
+                    </div>
+                    
+                    <div class="upload-zone" id="uploadArea">
+                        <div class="upload-content">
+                            <div class="upload-icon-wrapper">
+                                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                <div class="upload-pulse"></div>
+                            </div>
+                            <h4 class="upload-main-text">Drag & Drop Your Images Here</h4>
+                            <p class="upload-sub-text">or <span class="upload-click-text">click to browse</span></p>
+                            <div class="upload-info">
+                                <small><i class="fas fa-info-circle"></i> Supports JPG, PNG, GIF • Max 5MB per file</small>
+                            </div>
+                            <input type="file" id="fileInput" multiple accept="image/*" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; z-index: 10;">
+                        </div>
+                        <div class="upload-overlay"></div>
+                    </div>
+                    
+                    <div id="uploadStatus" class="upload-status mt-4"></div>
+                    
+                    <div class="uploaded-gallery mt-5">
+                        <h5 class="gallery-title text-center mb-4">
+                            <i class="fas fa-images"></i> Your Uploaded Images
+                        </h5>
+                        <div id="uploadedImages" class="row g-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="programs-section py-5">
+        <div class="container">
+            <div class="programs-header text-center mb-5">
+                <h2 class="programs-title">Our Programs</h2>
+                <p class="programs-subtitle">Transform your body with our expert-designed fitness programs</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="program-icon-wrapper">
+                            <i class="fas fa-running program-icon"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h4 class="program-title">Cardio Training</h4>
+                        <p class="program-description">High-intensity cardio workouts to boost your endurance and burn calories effectively.</p>
+                        <div class="program-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="program-icon-wrapper">
+                            <i class="fas fa-dumbbell program-icon"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h4 class="program-title">Strength Training</h4>
+                        <p class="program-description">Build muscle mass and increase your strength with our comprehensive weight training programs.</p>
+                        <div class="program-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="program-icon-wrapper">
+                            <i class="fas fa-heart program-icon"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h4 class="program-title">Wellness</h4>
+                        <p class="program-description">Focus on your mental and physical well-being with yoga, meditation, and recovery sessions.</p>
+                        <div class="program-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5" style="background-color: #ffdc9f;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-dark">Click Fit</h5>
+                    <p class="text-muted">Your fitness journey starts here. Transform your body, transform your life.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-dark">Daily Fact</h6>
+                    <div id="footer-api-content" class="api-content-footer">
+                        <div class="text-muted">Amazing facts loading...</div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-primary me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-primary me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary me-3"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-brand">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="footer-brand-text">CLICK-FIT</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
