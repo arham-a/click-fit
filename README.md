@@ -77,7 +77,7 @@
 * Express.js
 * Multer (for file uploads)
 
-### Database (Optional)
+### Database
 
 * MySQL
 
